@@ -1,0 +1,17 @@
+{
+  "name": "deploy_from_travis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" ",
+    "start": "gitbook serve",
+    "build": "gitbook build && rm -rf docs && cp -r _book docs",
+    "pdf": "gitbook pdf . test.pdf"
+  },
+  "author": "okwrtdsh <okwrtdsh@gmail.com>",
+  "dependencies": {
+    "gitbook-cli": "^2.3.0",
+    "svgexport": "^0.3.2"
+  }
+}
