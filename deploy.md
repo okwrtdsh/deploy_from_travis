@@ -5,7 +5,7 @@
 ドキュメントだったり、ビルドの成果物などなど、自ら生成して公開するのは面倒くさい。Travis CIを使えばそんな作業を自動化できます。今回はMarkdownで書かれたこの記事を[gitbook](https://github.com/GitbookIO/gitbook)でHTMLに変換して公開します。
 
 ## 1. Travis CIの設定
-`https://travis-ci.org/profile/okwrtdsh`(プライベートレポジトリの場合は`https://travis-ci.com/`)に行きスイッチをONにします。目的のレポジトリが表示されていない場合はSync accountのボタンを押してみて下さい。
+`https://travis-ci.org/profile/`(プライベートレポジトリの場合は`https://travis-ci.com/`)に行きスイッチをONにします。目的のレポジトリが表示されていない場合はSync accountのボタンを押してみて下さい。
 ![](./img/travis.png)
 
 ## 2. GitHubにdeploy keyを登録
@@ -84,11 +84,13 @@ before_install:
 
 ### 4.2 ssh認証の有効化
 
-ssh-addするときにpermissionがゆるいと怒られるのでchmodしてから追加します。
+`ssh-add`するときにpermissionがゆるいと怒られるのでchmodしてから追加します。
+`Could not open a connection to your authentication agent.`と怒られるので`ssh-add`する前に`ssh-agent`を開始します。
 
 ```yml
 # before_install続き
   - chmod 600 deploy_key
+  - eval `ssh-agent -s`
   - ssh-add deploy_key
 ```
 ### 4.3 gitのアカウント設定
@@ -135,3 +137,16 @@ git add .
 git commit -m "Publishing site on `date "+%Y-%m-%d %H:%M:%S"`"
 git push -f git@github.com:okwrtdsh/deploy_from_travis.git master:gh-pages
 ```
+
+## 5. masterにpush
+masterにpushするとgh-pages branchが作成されます。
+![](./img/gh-pages.png)
+
+これで`https://<username>.github.io/<repository>/`に行くとgitbookが見られます。
+
+# *完成!*
+
+## まとめ
+今回は見せるためにpublic repositoryで行いましたが、private repositoryでも同様に自動化できます。
+private repositoryでもgithub.ioは公開されるので注意して下さい。
+
