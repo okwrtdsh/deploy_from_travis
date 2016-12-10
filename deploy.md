@@ -148,5 +148,7 @@ masterにpushするとgh-pages branchが作成されます。
 
 ## まとめ
 今回は見せるためにpublic repositoryで行いましたが、private repositoryでも同様に自動化できます。
+
 private repositoryでもgithub.ioは公開されるので注意して下さい。
 
+今回作ったものは[GitHub](https://github.com/okwrtdsh/deploy_from_travis)で確認することができます。
