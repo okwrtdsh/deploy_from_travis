@@ -1,0 +1,366 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Travis CIからgh-pagesにデプロイ · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="joinus.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="deploy.html">
+            
+                <a href="deploy.html">
+            
+                    
+                    Travis CIからgh-pagesにデプロイ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="joinus.html">
+            
+                <a href="joinus.html">
+            
+                    
+                    宣伝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Travis CIからgh-pagesにデプロイ</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="travis-ci&#x304B;&#x3089;gh-pages&#x306B;&#x30C7;&#x30D7;&#x30ED;&#x30A4;">Travis CI&#x304B;&#x3089;gh-pages&#x306B;&#x30C7;&#x30D7;&#x30ED;&#x30A4;</h1>
+<h2 id="&#x4ECA;&#x56DE;&#x306E;&#x76EE;&#x6A19;">&#x4ECA;&#x56DE;&#x306E;&#x76EE;&#x6A19;</h2>
+<ul>
+<li>Travis CI&#x3067;&#x30D3;&#x30EB;&#x30C9;&#x3057;&#x3066;&#x3001;&#x30D3;&#x30EB;&#x30C9;&#x306E;&#x6210;&#x679C;&#x7269;&#x3092;gh-pages&#x306B;push&#x3057;&#x3066;&#x516C;&#x958B;</li>
+</ul>
+<p>&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x3060;&#x3063;&#x305F;&#x308A;&#x3001;&#x30D3;&#x30EB;&#x30C9;&#x306E;&#x6210;&#x679C;&#x7269;&#x306A;&#x3069;&#x306A;&#x3069;&#x3001;&#x81EA;&#x3089;&#x751F;&#x6210;&#x3057;&#x3066;&#x516C;&#x958B;&#x3059;&#x308B;&#x306E;&#x306F;&#x9762;&#x5012;&#x304F;&#x3055;&#x3044;&#x3002;Travis CI&#x3092;&#x4F7F;&#x3048;&#x3070;&#x305D;&#x3093;&#x306A;&#x4F5C;&#x696D;&#x3092;&#x81EA;&#x52D5;&#x5316;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x4ECA;&#x56DE;&#x306F;Markdown&#x3067;&#x66F8;&#x304B;&#x308C;&#x305F;&#x3053;&#x306E;&#x8A18;&#x4E8B;&#x3092;<a href="https://github.com/GitbookIO/gitbook" target="_blank">gitbook</a>&#x3067;HTML&#x306B;&#x5909;&#x63DB;&#x3057;&#x3066;&#x516C;&#x958B;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="1-travis-ci&#x306E;&#x8A2D;&#x5B9A;">1. Travis CI&#x306E;&#x8A2D;&#x5B9A;</h2>
+<p><code>https://travis-ci.org/profile/</code>(&#x30D7;&#x30E9;&#x30A4;&#x30D9;&#x30FC;&#x30C8;&#x30EC;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306E;&#x5834;&#x5408;&#x306F;<code>https://travis-ci.com/</code>)&#x306B;&#x884C;&#x304D;&#x30B9;&#x30A4;&#x30C3;&#x30C1;&#x3092;ON&#x306B;&#x3057;&#x307E;&#x3059;&#x3002;&#x76EE;&#x7684;&#x306E;&#x30EC;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;Sync account&#x306E;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3057;&#x3066;&#x307F;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;
+<img src="img/travis.png" alt=""></p>
+<h2 id="2-github&#x306B;deploy-key&#x3092;&#x767B;&#x9332;">2. GitHub&#x306B;deploy key&#x3092;&#x767B;&#x9332;</h2>
+<h3 id="21-deploykey&#x3092;&#x751F;&#x6210;">2.1 deploy_key&#x3092;&#x751F;&#x6210;</h3>
+<pre><code class="lang-sh">$ ssh-keygen -t rsa -b 4096 -C <span class="hljs-string">&quot;example@example.com&quot;</span> <span class="hljs-_">-f</span> deploy_key -N <span class="hljs-string">&apos;&apos;</span>
+Generating public/private rsa key pair.
+Your identification has been saved <span class="hljs-keyword">in</span> deploy_key.
+Your public key has been saved <span class="hljs-keyword">in</span> deploy_key.pub.
+...
+</code></pre>
+<p><code>https://github.com/&lt;username&gt;/&lt;repository&gt;/settings/keys</code>&#x306B;&#x884C;&#x304D;deploy key&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;key&#x306B;&#x306F;&#x5148;&#x7A0B;&#x751F;&#x6210;&#x3057;&#x305F;<strong>deploy_key.pub</strong>&#x3092;&#x5165;&#x529B;&#x3057;&#x307E;&#x3059;&#x3002;<code>Allow write access</code>&#x306E;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3082;&#x5FD8;&#x308C;&#x305A;&#x306B;&#x3002;</p>
+<p><img src="img/deploy_key.png" alt=""></p>
+<h2 id="3-travis-ci&#x306B;deploy-key&#x3092;&#x767B;&#x9332;">3. Travis CI&#x306B;deploy key&#x3092;&#x767B;&#x9332;</h2>
+<h3 id="31-travis-cli&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">3.1 Travis CLI&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h3>
+<p><a href="https://github.com/travis-ci/travis.rb" target="_blank">Travis CI&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;(CLI))</a>&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-sh">$ gem install travis
+</code></pre>
+<h3 id="32-travis-cli&#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;">3.2 Travis CLI&#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;</h3>
+<pre><code class="lang-sh">$ travis login
+...
+Username: username
+Password <span class="hljs-keyword">for</span> username: passward
+Successfully logged <span class="hljs-keyword">in</span> as username!
+</code></pre>
+<h3 id="33-&#x6697;&#x53F7;&#x5316;">3.3 &#x6697;&#x53F7;&#x5316;</h3>
+<p>2.1&#x3067;&#x751F;&#x6210;&#x3057;&#x305F;private key&#x3092;&#x6697;&#x53F7;&#x5316;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-sh">$ travis encrypt-file deploy_key
+Detected repository as &lt;username&gt;/&lt;repository&gt;, is this correct? |yes| yes
+encrypting deploy_key <span class="hljs-keyword">for</span> &lt;username&gt;/&lt;repository&gt;
+storing result as deploy_key.enc
+storing secure env variables <span class="hljs-keyword">for</span> decryption
+
+Please add the following to your build script (before_install stage <span class="hljs-keyword">in</span> your .travis.yml, <span class="hljs-keyword">for</span> instance):
+
+    openssl aes-256-cbc -K <span class="hljs-variable">$encrypted_0975109d8020_key</span> -iv <span class="hljs-variable">$encrypted_0975109d8020_iv</span> -in deploy_key.enc -out deploy_key <span class="hljs-_">-d</span>
+
+Pro Tip: You can add it automatically by running with --add.
+
+Make sure to add deploy_key.enc to the git repository.
+Make sure not to add deploy_key to the git repository.
+Commit all changes to your .travis.yml.
+</code></pre>
+<p><code>deploy_key.enc</code>&#x304C;&#x751F;&#x6210;&#x3055;&#x308C;&#x3001;<code>$encrypted_XXXXXXXXXXXX_key</code>&#x3068;<code>$encrypted_XXXXXXXXXXXX_key</code>&#x3068;&#x3044;&#x3046;&#x74B0;&#x5883;&#x5909;&#x6570;&#x304C;Travis CLI&#x306B;&#x3088;&#x3063;&#x3066;&#x30A2;&#x30C3;&#x30D7;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+Settings&#x304B;&#x3089;&#x8907;&#x5408;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x74B0;&#x5883;&#x5909;&#x6570;&#x304C;&#x683C;&#x7D0D;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x306E;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+<img src="img/encrypt.png" alt=""></p>
+<h3 id="34-&#x524A;&#x9664;">3.4 &#x524A;&#x9664;</h3>
+<p>&#x8AA4;&#x3063;&#x3066;commit&#x3057;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x3053;&#x3053;&#x3067;<code>deploy_key</code>&#x3068;<code>deploy_key.pub</code>&#x306F;&#x6D88;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x5FF5;&#x306E;&#x305F;&#x3081;<code>.gitignore</code>&#x306B;&#x3082;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<pre><code class="lang-sh">$ rm deploy_key deploy_key.pub
+$ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;deploy_key\ndeploy_key.pub&quot;</span> &gt;&gt; .gitignore
+</code></pre>
+<h2 id="4-travisyml&#x306E;&#x8A2D;&#x5B9A;">4. .travis.yml&#x306E;&#x8A2D;&#x5B9A;</h2>
+<h3 id="41-&#x5FA9;&#x53F7;&#x5316;">4.1 &#x5FA9;&#x53F7;&#x5316;</h3>
+<p>3.3&#x306E;&#x30ED;&#x30B0;&#x306B;&#x3042;&#x308B;&#x3088;&#x3046;&#x306B;<code>.travis.yml</code>&#x306E;<code>before_install</code>&#x306B;<code>openssl aes-256...</code>&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">before_install:</span>
+<span class="hljs-bullet">  -</span> openssl aes<span class="hljs-bullet">-256</span>-cbc -K $encrypted_0975109d8020_key -iv $encrypted_0975109d8020_iv -in deploy_key.enc -out deploy_key -d
+</code></pre>
+<h3 id="42-ssh&#x8A8D;&#x8A3C;&#x306E;&#x6709;&#x52B9;&#x5316;">4.2 ssh&#x8A8D;&#x8A3C;&#x306E;&#x6709;&#x52B9;&#x5316;</h3>
+<p><code>ssh-add</code>&#x3059;&#x308B;&#x3068;&#x304D;&#x306B;permission&#x304C;&#x3086;&#x308B;&#x3044;&#x3068;&#x6012;&#x3089;&#x308C;&#x308B;&#x306E;&#x3067;chmod&#x3057;&#x3066;&#x304B;&#x3089;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+<code>Could not open a connection to your authentication agent.</code>&#x3068;&#x6012;&#x3089;&#x308C;&#x308B;&#x306E;&#x3067;<code>ssh-add</code>&#x3059;&#x308B;&#x524D;&#x306B;<code>ssh-agent</code>&#x3092;&#x958B;&#x59CB;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yml"><span class="hljs-comment"># before_install&#x7D9A;&#x304D;</span>
+<span class="hljs-bullet">  -</span> chmod <span class="hljs-number">600</span> deploy_key
+<span class="hljs-bullet">  -</span> eval `ssh-agent -s`
+<span class="hljs-bullet">  -</span> ssh-add deploy_key
+</code></pre>
+<h3 id="43-git&#x306E;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x8A2D;&#x5B9A;">4.3 git&#x306E;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x8A2D;&#x5B9A;</h3>
+<p>Travis CI&#x3067;commit&#x3059;&#x308B;git&#x306E;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yml"><span class="hljs-comment"># before_install&#x7D9A;&#x304D;</span>
+<span class="hljs-bullet">  -</span> git config --global user.name <span class="hljs-string">&quot;Travis-CI&quot;</span>
+<span class="hljs-bullet">  -</span> git config --global user.email <span class="hljs-string">&quot;travis-ci@example.com&quot;</span>
+</code></pre>
+<h3 id="44-nodejs&#x306E;&#x8A2D;&#x5B9A;">4.4 node_js&#x306E;&#x8A2D;&#x5B9A;</h3>
+<p>gitbook&#x3067;&#x30D3;&#x30EB;&#x30C9;&#x3059;&#x308B;&#x305F;&#x3081;<code>node_js</code>&#x3092;&#x4F7F;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">language:</span> node_js
+<span class="hljs-attr">node_js:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">&apos;6.1&apos;</span>
+<span class="hljs-attr">sudo:</span> <span class="hljs-literal">false</span>
+<span class="hljs-attr">cache:</span>
+<span class="hljs-attr">  directories:</span>
+<span class="hljs-bullet">    -</span> node_modules
+</code></pre>
+<h3 id="45-&#x30D3;&#x30EB;&#x30C9;&#x3001;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x306E;&#x8A2D;&#x5B9A;">4.5 &#x30D3;&#x30EB;&#x30C9;&#x3001;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x306E;&#x8A2D;&#x5B9A;</h3>
+<p>branch&#x304C;master&#x304B;&#x3064;pull request&#x3067;&#x306F;&#x306A;&#x3044;&#x5834;&#x5408;&#x306E;&#x307F;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">script:</span>
+<span class="hljs-bullet">  -</span> npm run build
+<span class="hljs-bullet">  -</span> <span class="hljs-string">&apos;[ &quot;$TRAVIS_BRANCH&quot; == master ] &amp;&amp; [ &quot;$TRAVIS_PULL_REQUEST&quot; == &quot;false&quot; ] &amp;&amp; bash ./deploy.sh&apos;</span>
+</code></pre>
+<p><code>npm run build</code>&#x3067;<code>docs/</code>&#x306B;HTML&#x304C;&#x751F;&#x6210;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;&#x3001;&#x4E0D;&#x8981;&#x306A;&#x3082;&#x306E;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x3001;commit&#x3057;&#x3066;&#x3001;gh-pages&#x306B;push&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-sh"><span class="hljs-comment">#!/bin/bash -eu</span>
+<span class="hljs-built_in">cd</span> docs
+rm <span class="hljs-_">-f</span> deploy_key deploy_key.enc deploy.sh .travis.yml package.json
+git init
+git add .
+git commit -m <span class="hljs-string">&quot;Publishing site on `date &quot;</span>+%Y-%m-%d %H:%M:%S<span class="hljs-string">&quot;`&quot;</span>
+git push <span class="hljs-_">-f</span> git@github.com:okwrtdsh/deploy_from_travis.git master:gh-pages
+</code></pre>
+<h2 id="5-master&#x306B;push">5. master&#x306B;push</h2>
+<p>master&#x306B;push&#x3059;&#x308B;&#x3068;gh-pages branch&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+<img src="img/gh-pages.png" alt=""></p>
+<p>&#x3053;&#x308C;&#x3067;<code>https://&lt;username&gt;.github.io/&lt;repository&gt;/</code>&#x306B;&#x884C;&#x304F;&#x3068;gitbook&#x304C;&#x898B;&#x3089;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<h1 id="&#x5B8C;&#x6210;"><em>&#x5B8C;&#x6210;!</em></h1>
+<h2 id="&#x307E;&#x3068;&#x3081;">&#x307E;&#x3068;&#x3081;</h2>
+<p>&#x4ECA;&#x56DE;&#x306F;&#x898B;&#x305B;&#x308B;&#x305F;&#x3081;&#x306B;public repository&#x3067;&#x884C;&#x3044;&#x307E;&#x3057;&#x305F;&#x304C;&#x3001;private repository&#x3067;&#x3082;&#x540C;&#x69D8;&#x306B;&#x81EA;&#x52D5;&#x5316;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>private repository&#x3067;&#x3082;github.io&#x306F;&#x516C;&#x958B;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+<p>&#x4ECA;&#x56DE;&#x4F5C;&#x3063;&#x305F;&#x3082;&#x306E;&#x306F;<a href="https://github.com/okwrtdsh/deploy_from_travis" target="_blank">GitHub</a>&#x3067;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="joinus.html" class="navigation navigation-next " aria-label="Next page: 宣伝">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Travis CIからgh-pagesにデプロイ","level":"1.2","depth":1,"next":{"title":"宣伝","level":"1.3","depth":1,"path":"joinus.md","ref":"joinus.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"deploy.md","mtime":"2016-12-10T12:29:34.913Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-10T12:30:25.272Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
